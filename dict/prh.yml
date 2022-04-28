@@ -1,0 +1,8 @@
+version: 1
+
+imports:
+  - katakana.yml
+  - kanji.yml
+  - general.yml
+  - noun.yml
+  - proper-noun.yml

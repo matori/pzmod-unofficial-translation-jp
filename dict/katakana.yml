@@ -1,0 +1,363 @@
+# このカタカナ表記揺れ校正用の辞書は、以下のガイドラインをベースに作られています。
+#
+# ----
+#
+# 一般財団法人テクニカルコミュニケーター協会 テクニカルコミュニケーター協会
+# 外来語（カタカナ）表記ガイドライン 第3版
+# https://www.jtca.org/standardization/katakana_guide_3_20171222.pdf
+#
+# ----
+#
+# 放送用語委員会（東京）
+# 外来語の発音・表記について
+# ～用語の決定～
+#
+# https://www.nhk.or.jp/bunken/research/kotoba/pdf/20150601_5.pdf
+# https://www.nhk.or.jp/bunken/summary/kotoba/yougo/pdf/027.pdf
+# https://www.nhk.or.jp/bunken/summary/kotoba/yougo/pdf/025.pdf
+#
+# ---
+#
+# 基本的には上記に従いますが、「プレイヤー」など本MOD特有のルールもありますのでご注意ください。
+# また、ゲームという文脈で優勢な表記を優先することもあります。
+guideline:
+  - &ar-end -ar で終わるものは原則として長音符を付けます。
+  - &ar-end-ex -ar で終わりますが、例外として長音符を付けません。
+  - &er-end -er で終わるものは原則として長音符を付けます。
+  - &er-end-ex -er で終わりますが、例外として長音符を付けません。
+  - &er-end-ex2 -er で終わりますが、当翻訳の例外として長音符を付けません。
+  - &or-end -or で終わるものは原則として長音符を付けます。
+  - &or-end-ex -or で終わりますが、例外として長音符を付けません。
+
+  - &y-end '*y で終わるものは原則として長音符を付けます。'
+  - &y-end-ex '*y で終わりますが、例外として長音符を付けません。'
+  - &y-end-ex2 '*y で終わりますが、当翻訳の例外として長音符を付けません。'
+
+  - &ware ware は長音符を付けず、「エ」ではなく「ェ」を使って表記します。
+  - &wear wear は長音符を付けず、「ェ」ではなく「エ」を使って表記します。
+
+  - &re-end -re で終わるものは原則として長音符を付けません。
+  - &sure-end -sure で終わるものは長音符を付けます。
+  - &ture-end -ture で終わるものは長音符を付けます。
+
+  - &re-start 語頭の「re」「pre」の表記は「リ」「プリ」を使って表記します。
+  - &re-start-ex 語頭が「re」「pre」ですが、例外として「レ」「プレ」を使って表記します。
+
+  - &ei-pronounce 発音記号が ei になるものは長音符を使って表記します。
+  - &ei-pronounce-ex 発音記号が ei になるものを含みますが、例外として長音符を使わずに表記します。
+  - &ei-pronounce-ex2 発音記号が ei になるものを含みますが、当翻訳の例外として長音符を使わずに表記します。
+  - &ou-pronounce 発音記号が ou になるものは長音符を使って表記します。
+  - &ou-pronounce-ex 発音記号が ou になるものを含みますが、例外として長音符を使わずに表記します。
+  - &v-pronounce 原語の「V」音になるものは「バ」「ビ」「ブ」「ベ」「ボ」を使って表記します。
+
+  - &ti-pronounce 「ti」は「チ」を使って表記します。ただし「tion」の場合は「ション」を使います。
+  - &ti-pronounce-ex 「ti」を含みますが、例外として「ティ」を使って表記します。
+  - &di-pronounce 「di」は「ディ」を使って表記します。
+  - &di-pronounce-ex 「di」を含みますが、例外として「デ」や「ジ」を使って表記します。
+  - &de-pronounce 「de」は「デ」を使って表記します。
+  - &de-pronounce-ex 「de」を含みますが、例外として「ディ」や「ド」を使って表記します。
+  - &ia-pronounce 表記が「ia」で発音が /ɪə/ のものは「（イ）ア」を使って表記します。
+  - &ia-pronounce-ex 表記が「ia」で発音が /ɪə/ を含みますが、例外として「ヤ」を使って表記します。
+
+  - &wi-display 「ウイ／ウィ」は原則的に「ウイ」と表記します。
+  - &wi-display-ex 「ウイ／ウィ」を含みますが、例外として「ウィ」と表記します。
+  - &we-display 「ウエ／ウェ」は原則的に「ウイ」と表記します。
+  - &we-display-ex 「ウエ／ウェ」を含みますが、例外として「ウェ」と表記します。
+  - &wo-display 「ウオ／ウォ」は原則的に「ウォ」と表記します。
+  # - &wo-display-ex # 例外はなさそう
+  - &kw-display 「クア／クァ」「クイ／クィ」「クエ／クェ」「クオ／クォ」は「クア」「クイ」「クエ」「クオ」と表記します。
+  - &kw-display-ex 「クア／クァ」「クイ／クィ」「クエ／クェ」「クオ／クォ」を含みますが、例外として「クァ」「クィ」「クェ」「クォ」と表記します。
+  - &f-display 「フア／ファ」「フイ／フィ」「フエ／フェ」は「ファ」「フィ」「フェ」と表記します。
+  - &f-display-ex 「フア／ファ」「フイ／フィ」「フエ／フェ」を含みますが、例外として「フア」「フイ」「フエ」と表記します。
+  - &fo-display 「fo」「pho」は「フォ」と表記します。
+  - &fo-display-ex 「fo」「pho」は「フォ」を含みますが、例外として「ホ」と表記します。
+rules:
+  - pattern: アイディア
+    expected: アイデア
+    prh: *de-pronounce
+
+  - pattern: /(イヤ|ヘッド)フォン/
+    expected: $1ホン
+    prh: *fo-display-ex
+
+  - pattern: インベントリー
+    expected: インベントリ
+    prh: *y-end-ex2
+
+  - pattern: ウィスキー
+    expected: ウイスキー
+    prh: *wi-display
+
+  - pattern: ウィルス
+    expected: ウイルス
+    prh: *wi-display
+
+  - pattern: /ウ[イィ]ンドー/
+    expected: ウインドウ
+    prh: *ou-pronounce-ex
+
+  - pattern: /ウィンド[ウー]/
+    expected: ウインドウ
+    prh: *wi-display
+
+  - pattern: /(グループ|スパイ|ソフト|ハード|ファーム|フリー)ウェアー/
+    expected: $1ウェア
+    prh: *ware
+
+  - pattern: /(グループ|スパイ|ソフト|ハード|ファーム|フリー)ウエアー?/
+    expected: $1ウェア
+    prh: *ware
+
+  - pattern: /(アイ|アンダー|カジュアル|フォーマル|フット|ヘッド)ウエアー/
+    expected: $1ウエア
+    prh: *wear
+
+  - pattern: /(アイ|アンダー|カジュアル|フォーマル|フット|ヘッド)ウェアー?/
+    expected: $1ウエア
+    prh: *wear
+
+  - pattern: ウェスト
+    expected: ウエスト
+    prh: *we-display
+
+  - pattern: ウエブ
+    expected: ウェブ
+    prh: *we-display-ex
+
+  - pattern: ウエルカム
+    expected: ウェルカム
+    prh: *we-display-ex
+
+  - pattern: /ウ[オォ]ータ(?!ー)/
+    expected: ウォーター
+    prh: *er-end
+
+  - pattern: ウオーター
+    expected: ウォーター
+    prh: *wo-display
+
+  - pattern: ウオッチ
+    expected: ウォッチ
+    prh: *wo-display
+
+  - pattern: /オ[ウゥー]デオ/
+    expected: オーディオ
+    prh: *di-pronounce
+
+  - pattern: /オ[ウゥ]ディオ/
+    expected: オーディオ
+    prh: *ou-pronounce
+
+  - pattern: /コミュニティ(?!ー)/
+    expected: コミュニティー
+    prh: *y-end
+
+  - pattern: /コンテナー/
+    expected: コンテナ
+    prh: *er-end-ex2
+
+  - pattern: コンテント
+    expected: コンテンツ
+    prh: 日本では単数形でも「ツ」が一般的なので「コンテンツ」表記です。
+
+  - pattern: /コントローラ(?!ー)/
+    expected: コントローラー
+    prh: *er-end
+
+  - pattern: /サーバ(?!ー)/
+    expected: サーバー
+    prh: *er-end
+
+  - pattern: /ショベル(?!カー|ロード|ローダー?)/
+    expected: シャベル
+    prh: 「シャベル」に統一します。ただし「ショベルカー」「ショベルローダー」は「ショベル」です。
+
+  - pattern: スパゲティ
+    expected: スパゲッティ
+    prh: 「スパゲッティ」に統一します。
+
+  - pattern: /(コン)?テクスト/
+    expected: $1テキスト
+    prh: 「text」の表記は「テキスト」に統一します。
+
+  - pattern: /テクスチャ(?!ー)/
+    expected: テクスチャー
+    prh: *ture-end
+
+  - pattern: ディジタル
+    expected: デジタル
+    prh: *di-pronounce-ex
+
+  - pattern: トレイ
+    expected: トレー
+    prh: *ei-pronounce
+
+  - pattern: ネール
+    expected: ネイル
+    prh: *ei-pronounce-ex
+
+  - pattern: /パーカ(?!ー)/
+    expected: パーカー
+    prh: 英語だとParkaですが、NHKの表記に合わせて「パーカー」に統一します。
+
+  - pattern: パインアップル
+    expected: パイナップル
+    prh: 「パイナップル」に統一します。
+
+  - pattern: ハラペニョ
+    expected: ハラペーニョ
+    prh: 「ハラペーニョ」に統一します。
+
+  - pattern: /ハロウイー?ン/
+    expected: ハロウィーン
+    prh: *wi-display-ex
+
+  - pattern: ハロウィン
+    expected: ハロウィーン
+    prh: "NHKの表記に合わせます。 ref: https://www.nhk.or.jp/bunken/research/kotoba/20181001_5.html"
+
+  - pattern: ピーナッツ
+    expected: ピーナツ
+    prh: 「ピーナツ」に統一します。
+
+  - pattern: /ビューワー?/
+    expected: ビューアー
+
+  - pattern: /ビューア(?!ー)/
+    expected: ビューアー
+    prh: *er-end
+
+  - pattern: /ファイヤー?/
+    expected: ファイア
+    prh: *re-end
+
+  - pattern: ファイアー
+    expected: ファイア
+    prh: *re-end
+
+  - pattern: フアイル
+    expected: ファイル
+    prh: *f-display
+
+  - pattern: ヴェスト
+    expected: ベスト
+    prh: *v-pronounce
+
+  - pattern: /フォルダ(?!ー)/
+    expected: フォルダー
+    prh: *er-end
+
+  - pattern: /ブラウザ(?!ー)/
+    expected: ブラウザー
+    prh: *er-end
+
+  - pattern: プレセット
+    expected: プリセット
+    prh: *re-start
+
+  - pattern: /(?<!ス)プレー(?!ヤ)/
+    expected: プレイ
+    prh: *ei-pronounce-ex2
+
+  - pattern: /プレーヤー?/
+    expected: プレイヤー
+    prh: *ei-pronounce-ex2
+
+  - pattern: /プレイヤ(?!ー)/
+    expected: プレイヤー
+    prh: *er-end
+
+  - pattern: /ブロッコリ(?!ー)/
+    expected: ブロッコリー
+    prh: 「ブロッコリー」に統一します。
+
+  - pattern: プロパントーチ
+    expected: プロパンバーナー
+    prh: 「プロパンバーナー」のほうが一般的なので、こちらに統一します。
+
+  - pattern: ベイキング
+    expected: ベーキング
+    prh: *ei-pronounce
+
+  - pattern: ホッチキス
+    expected: ホチキス
+    prh: NHKの表記に合わせて「ホチキス」に統一します。
+
+  - pattern: ボーダレス
+    expected: ボーダーレス
+    prh: *er-end
+
+  - pattern: ボロネーズ
+    expected: ボロネーゼ
+    prh: 「ボロネーズ」はフランス風読み、「ボロネーゼ」はイタリア風読みですが、当翻訳では「ボロネーゼ」で統一します。
+
+  - pattern: /ヴォリューム/
+    expected: ボリューム
+    prh: *v-pronounce
+
+  - pattern: /ボリ[ウゥ]ム/
+    expected: ボリューム
+
+  - pattern: /マ(?:チェー?テ|シェ(?:ー?ティー?|ーテ|ッ?ト))/
+    expected: マチェット
+    prh: この表記でも間違いではありませんが、当翻訳ではGoogle検索結果の一番多かった「マチェット」で統一します。
+
+  - pattern: ママレード
+    expected: マーマレード
+    prh: この表記でも間違いではありませんが、当翻訳では「マーマレード」で統一します。
+
+  - pattern: メイカー
+    expected: メーカー
+    prh: *ei-pronounce
+
+  - pattern: メーク
+    expected: メイク
+    prh: *ei-pronounce-ex
+
+  - pattern: メード
+    expected: メイド
+    prh: *ei-pronounce-ex
+
+  - pattern: メイル
+    expected: メール
+    prh: *ei-pronounce
+
+  - pattern: メーン
+    expected: メイン
+    prh: *ei-pronounce-ex
+
+  - pattern: /メモリ(?!ー)/
+    expected: メモリー
+    prh: *y-end
+
+  - pattern: /ユーザ(?!ー)/
+    expected: ユーザー
+    prh: *er-end
+
+  - pattern: /ライブラリ(?!ー)/
+    expected: ライブラリー
+    prh: *y-end
+
+  - pattern: /ラ(?:ディ|ヂ)[アヤ]ル/
+    expected: ラジアル
+    prh: *di-pronounce-ex
+
+  - pattern: /ラ(?:ディ|ヂ)オ/
+    expected: ラジオ
+    prh: *di-pronounce-ex
+
+  - pattern: レーアウト
+    expected: レイアウト
+    prh: *ei-pronounce-ex
+
+  - pattern: レーンコート
+    expected: レインコート
+    prh: *ei-pronounce-ex
+
+  - pattern: /レガシ(?!ー)/
+    expected: レガシー
+    prh: *y-end
+
+  - pattern: レヴェル
+    expected: レベル
+    prh: *v-pronounce

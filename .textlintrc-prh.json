@@ -1,0 +1,12 @@
+{
+  "plugins": {
+    "pzlua": true
+  },
+  "rules": {
+    "prh": {
+      "rulePaths": [
+        "dict/prh.yml"
+      ]
+    }
+  }
+}

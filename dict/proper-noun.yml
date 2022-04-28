@@ -1,0 +1,13 @@
+# PZ固有名詞の表記揺れ校正用辞書
+rules:
+  - pattern: /マルドロ(?!ー)/
+    expected: マルドロー
+
+  - pattern: ウェストポイント
+    expected: ウエストポイント
+
+  - pattern: レバーサイド
+    expected: リバーサイド
+
+  - pattern: ルイスビル
+    expected: ルイビル

@@ -1,0 +1,42 @@
+# 一般名詞の表記揺れ校正用辞書
+rules:
+
+  - pattern: /[蠅蝿]/
+    expected: ハエ
+
+  - pattern: /(?<![ァ-ン])セッ?氏/
+    expected: 摂氏
+
+  - pattern: /(?<![ァ-ン])カ氏/
+    expected: 華氏
+
+  - pattern: /(?:のど|咽喉|咽)([がの]渇)/
+    expected: 喉$1
+    prh: 「のど」は「喉」で表記します。
+
+  - pattern: 乗数
+    expected: 倍率
+    prh: 正確には違いますが、このゲーム内においては同じようなものなので分かりやすいほうを採用します。
+
+  - pattern: /(?:マガジンスタンド|雑誌(?:スタンド|ラック))/
+    expected: マガジンラック
+    prh: 「Magazine Stand」の訳語は「マガジンラック」に統一します。
+
+  - pattern: /(?:引っ[掻か]|ひっ掻)([かきくけこ])/
+    expected: ひっか$1
+    prh: 「ひっかく」はひらがなで表記します。
+
+  - pattern: そえ木
+    expected: 添え木
+    prh: 「そえぎ」は「添え木」で表記します。
+
+  - pattern: 僅か
+    expected: わずか
+    prh: 「わずか」はひらがなで表記します。
+
+  - pattern: /取りだ([さしすせそ])/
+    expected: 取り出$1
+
+  - pattern: /^時(?:々|どき)$/
+    expected: ときどき
+    prh: 設定などの選択肢「ときどき」はひらがなで表記します。

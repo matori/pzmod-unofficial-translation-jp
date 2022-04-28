@@ -1,0 +1,7 @@
+{
+  "name": "textlint-plugin-pzlua",
+  "private": true,
+  "description": "Project Zomboidの翻訳ファイルに変換するLuaテーブルデータ用textlintプラグイン",
+  "version": "1.0.0",
+  "main": "index.js"
+}
